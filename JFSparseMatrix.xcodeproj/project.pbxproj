@@ -9,7 +9,12 @@
 /* Begin PBXBuildFile section */
 		880C969E1A85303200087C2A /* JFSparseMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 880C969D1A85303200087C2A /* JFSparseMatrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		880C96A41A85303200087C2A /* JFSparseMatrix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 880C96981A85303200087C2A /* JFSparseMatrix.framework */; };
-		880C96AB1A85303200087C2A /* JFSparseMatrixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C96AA1A85303200087C2A /* JFSparseMatrixTests.swift */; };
+		880C96B51A85313C00087C2A /* SparseMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C96B41A85313C00087C2A /* SparseMatrix.swift */; };
+		880C96B71A8533B700087C2A /* DictionarySparseMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C96B61A8533B700087C2A /* DictionarySparseMatrix.swift */; };
+		880C96BB1A8653CF00087C2A /* DictionarySparseMatrixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C96BA1A8653CF00087C2A /* DictionarySparseMatrixTests.swift */; };
+		88B91E251A86A43D00C39F31 /* SparseMatrix.swift in Headers */ = {isa = PBXBuildFile; fileRef = 880C96B41A85313C00087C2A /* SparseMatrix.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		88B91E291A86AB2300C39F31 /* DictionarySparseMatrix.swift in Headers */ = {isa = PBXBuildFile; fileRef = 880C96B61A8533B700087C2A /* DictionarySparseMatrix.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		88B91E2B1A86B23500C39F31 /* SparseIndexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B91E2A1A86B23500C39F31 /* SparseIndexTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +33,10 @@
 		880C969D1A85303200087C2A /* JFSparseMatrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFSparseMatrix.h; sourceTree = "<group>"; };
 		880C96A31A85303200087C2A /* JFSparseMatrixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JFSparseMatrixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		880C96A91A85303200087C2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		880C96AA1A85303200087C2A /* JFSparseMatrixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFSparseMatrixTests.swift; sourceTree = "<group>"; };
+		880C96B41A85313C00087C2A /* SparseMatrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparseMatrix.swift; sourceTree = "<group>"; };
+		880C96B61A8533B700087C2A /* DictionarySparseMatrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionarySparseMatrix.swift; sourceTree = "<group>"; };
+		880C96BA1A8653CF00087C2A /* DictionarySparseMatrixTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionarySparseMatrixTests.swift; sourceTree = "<group>"; };
+		88B91E2A1A86B23500C39F31 /* SparseIndexTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparseIndexTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,8 @@
 			children = (
 				880C969D1A85303200087C2A /* JFSparseMatrix.h */,
 				880C969B1A85303200087C2A /* Supporting Files */,
+				880C96B41A85313C00087C2A /* SparseMatrix.swift */,
+				880C96B61A8533B700087C2A /* DictionarySparseMatrix.swift */,
 			);
 			path = JFSparseMatrix;
 			sourceTree = "<group>";
@@ -88,8 +98,9 @@
 		880C96A71A85303200087C2A /* JFSparseMatrixTests */ = {
 			isa = PBXGroup;
 			children = (
-				880C96AA1A85303200087C2A /* JFSparseMatrixTests.swift */,
 				880C96A81A85303200087C2A /* Supporting Files */,
+				880C96BA1A8653CF00087C2A /* DictionarySparseMatrixTests.swift */,
+				88B91E2A1A86B23500C39F31 /* SparseIndexTests.swift */,
 			);
 			path = JFSparseMatrixTests;
 			sourceTree = "<group>";
@@ -110,6 +121,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				880C969E1A85303200087C2A /* JFSparseMatrix.h in Headers */,
+				88B91E251A86A43D00C39F31 /* SparseMatrix.swift in Headers */,
+				88B91E291A86AB2300C39F31 /* DictionarySparseMatrix.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +222,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				880C96B51A85313C00087C2A /* SparseMatrix.swift in Sources */,
+				880C96B71A8533B700087C2A /* DictionarySparseMatrix.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +231,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				880C96AB1A85303200087C2A /* JFSparseMatrixTests.swift in Sources */,
+				88B91E2B1A86B23500C39F31 /* SparseIndexTests.swift in Sources */,
+				880C96BB1A8653CF00087C2A /* DictionarySparseMatrixTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +335,7 @@
 		880C96AF1A85303200087C2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -328,12 +345,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		880C96B01A85303200087C2A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -395,6 +414,7 @@
 				880C96B01A85303200087C2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		880C96B11A85303200087C2A /* Build configuration list for PBXNativeTarget "JFSparseMatrixTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +423,7 @@
 				880C96B31A85303200087C2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
