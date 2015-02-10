@@ -8,31 +8,29 @@
 
 import Foundation
 
-public class SparseIndex {
-    public let row: Int = 0
-    public let col: Int = 0
+public class SparseMatrix<T> : SequenceType {
+    var matrix: [SparseIndex: T] = [:]
     
-    public required init(row: Int, col: Int) {
-        self.row = row
-        self.col = col
+    public required init() {
+        matrix = [:]
     }
     
-    public var moore: [(Int, Int)] {
+    public subscript(row: Int, column: Int) -> T? {
         get {
-            return [(row-1, col  ),
-                    (row-1, col+1),
-                    (row  , col+1),
-                    (row+1, col+1),
-                    (row+1, col  ),
-                    (row+1, col-1),
-                    (row  , col-1),
-                    (row-1, col-1)]
+            return matrix[SparseIndex(row: row, col: column)]
+        }
+        set(data) {
+            matrix[SparseIndex(row: row, col: column)] = data
         }
     }
-}
     
-public protocol SparseMatrix : SequenceType {
-    typealias DataType
-    subscript(row: Int, column: Int) -> DataType? { get set }
-    init()
+    public func generate() -> DictionaryGenerator<SparseIndex, T> {
+        return matrix.generate()
+    }
+    
+    public var count: Int {
+        get {
+            return matrix.count
+        }
+    }
 }

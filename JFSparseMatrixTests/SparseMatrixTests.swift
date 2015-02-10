@@ -1,6 +1,6 @@
 //
-//  DictionarySparseMatrixTests.swift
-//  DictionarySparseMatrixTests
+//  SparseMatrixTests.swift
+//  SparseMatrixTests
 //
 //  Created by John Fisher on 2/6/15.
 //  Copyright (c) 2015 John Fisher. All rights reserved.
@@ -11,12 +11,12 @@ import XCTest
 import JFSparseMatrix
 import Foundation
 
-class DictionarySparseMatrixTests: XCTestCase {
-    var subject = DictionarySparseMatrix<Int>()
+class SparseMatrixTests: XCTestCase {
+    var subject = SparseMatrix<Int>()
     
     override func setUp() {
         super.setUp()
-        subject = DictionarySparseMatrix<Int>()
+        subject = SparseMatrix<Int>()
     }
     
     override func tearDown() {

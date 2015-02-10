@@ -10,10 +10,9 @@
 		880C969E1A85303200087C2A /* JFSparseMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 880C969D1A85303200087C2A /* JFSparseMatrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		880C96A41A85303200087C2A /* JFSparseMatrix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 880C96981A85303200087C2A /* JFSparseMatrix.framework */; };
 		880C96B51A85313C00087C2A /* SparseMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C96B41A85313C00087C2A /* SparseMatrix.swift */; };
-		880C96B71A8533B700087C2A /* DictionarySparseMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C96B61A8533B700087C2A /* DictionarySparseMatrix.swift */; };
-		880C96BB1A8653CF00087C2A /* DictionarySparseMatrixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C96BA1A8653CF00087C2A /* DictionarySparseMatrixTests.swift */; };
+		880C96BB1A8653CF00087C2A /* SparseMatrixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C96BA1A8653CF00087C2A /* SparseMatrixTests.swift */; };
+		88B073FE1A89A0B300B34AA4 /* SparseIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B073FD1A89A0B300B34AA4 /* SparseIndex.swift */; };
 		88B91E251A86A43D00C39F31 /* SparseMatrix.swift in Headers */ = {isa = PBXBuildFile; fileRef = 880C96B41A85313C00087C2A /* SparseMatrix.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		88B91E291A86AB2300C39F31 /* DictionarySparseMatrix.swift in Headers */ = {isa = PBXBuildFile; fileRef = 880C96B61A8533B700087C2A /* DictionarySparseMatrix.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		88B91E2B1A86B23500C39F31 /* SparseIndexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B91E2A1A86B23500C39F31 /* SparseIndexTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,8 +33,8 @@
 		880C96A31A85303200087C2A /* JFSparseMatrixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JFSparseMatrixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		880C96A91A85303200087C2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		880C96B41A85313C00087C2A /* SparseMatrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparseMatrix.swift; sourceTree = "<group>"; };
-		880C96B61A8533B700087C2A /* DictionarySparseMatrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionarySparseMatrix.swift; sourceTree = "<group>"; };
-		880C96BA1A8653CF00087C2A /* DictionarySparseMatrixTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionarySparseMatrixTests.swift; sourceTree = "<group>"; };
+		880C96BA1A8653CF00087C2A /* SparseMatrixTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparseMatrixTests.swift; sourceTree = "<group>"; };
+		88B073FD1A89A0B300B34AA4 /* SparseIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparseIndex.swift; sourceTree = "<group>"; };
 		88B91E2A1A86B23500C39F31 /* SparseIndexTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparseIndexTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,7 +81,7 @@
 				880C969D1A85303200087C2A /* JFSparseMatrix.h */,
 				880C969B1A85303200087C2A /* Supporting Files */,
 				880C96B41A85313C00087C2A /* SparseMatrix.swift */,
-				880C96B61A8533B700087C2A /* DictionarySparseMatrix.swift */,
+				88B073FD1A89A0B300B34AA4 /* SparseIndex.swift */,
 			);
 			path = JFSparseMatrix;
 			sourceTree = "<group>";
@@ -99,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				880C96A81A85303200087C2A /* Supporting Files */,
-				880C96BA1A8653CF00087C2A /* DictionarySparseMatrixTests.swift */,
+				880C96BA1A8653CF00087C2A /* SparseMatrixTests.swift */,
 				88B91E2A1A86B23500C39F31 /* SparseIndexTests.swift */,
 			);
 			path = JFSparseMatrixTests;
@@ -122,7 +121,6 @@
 			files = (
 				880C969E1A85303200087C2A /* JFSparseMatrix.h in Headers */,
 				88B91E251A86A43D00C39F31 /* SparseMatrix.swift in Headers */,
-				88B91E291A86AB2300C39F31 /* DictionarySparseMatrix.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,8 +220,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88B073FE1A89A0B300B34AA4 /* SparseIndex.swift in Sources */,
 				880C96B51A85313C00087C2A /* SparseMatrix.swift in Sources */,
-				880C96B71A8533B700087C2A /* DictionarySparseMatrix.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88B91E2B1A86B23500C39F31 /* SparseIndexTests.swift in Sources */,
-				880C96BB1A8653CF00087C2A /* DictionarySparseMatrixTests.swift in Sources */,
+				880C96BB1A8653CF00087C2A /* SparseMatrixTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
