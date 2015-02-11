@@ -41,5 +41,5 @@ public class SparseIndex : Hashable, Equatable {
 }
 
 public func ==(lhs: SparseIndex, rhs: SparseIndex) -> Bool {
-    return lhs.row == rhs.row && lhs.col == lhs.col
+    return lhs.row == rhs.row && lhs.col == rhs.col
 }

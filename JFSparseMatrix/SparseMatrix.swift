@@ -8,11 +8,15 @@
 
 import Foundation
 
-public class SparseMatrix<T> : SequenceType {
+public class SparseMatrix<T: Printable> : SequenceType, Printable {
     var matrix: [SparseIndex: T] = [:]
     
-    public required init() {
-        matrix = [:]
+    public required init() {}
+    
+    public required init(array: Array<(Int, Int, T)>) {
+        for a in array {
+            self[a.0, a.1] = a.2
+        }
     }
     
     public subscript(row: Int, column: Int) -> T? {
@@ -31,6 +35,16 @@ public class SparseMatrix<T> : SequenceType {
     public var count: Int {
         get {
             return matrix.count
+        }
+    }
+    
+    public var description: String {
+        get {
+            var str = ""
+            for (index, data) in matrix {
+                str = str + "[\(index.row), \(index.col)] = \(data)\n"
+            }
+            return str
         }
     }
 }

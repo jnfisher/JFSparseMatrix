@@ -79,4 +79,11 @@ class SparseMatrixTests: XCTestCase {
         XCTAssert(subject[-35000, 30000] == 3333, "Expect \(subject[-35000, 30000]) to be 3333")
         XCTAssert(subject[-1, -1] == nil)
     }
+    
+    func testConstructionWithAnArrayOfTuples() {
+        subject = SparseMatrix<Int>(array: [(0, 1, 3), (0, 2, 4)])
+        
+        XCTAssert(subject[0, 1] == 3, "Expect \(subject[0, 1]) to be 3")
+        XCTAssert(subject[0, 2] == 4)
+    }
 }
